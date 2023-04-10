@@ -14,11 +14,44 @@
 	align-items: baseline;
 	align-content: stretch;
   }
-.flex-container div{
-    width: 45%;
-    height: 100%;
-    margin: 5px;
-}
-.flex-container img{
-    width: 600px;
-}
+
+  @media screen and (min-width: 1024px){
+    .flex-container div{
+      width: 32%;
+      height: 100%;
+      margin: 5px;
+    }
+  .flex-container img{
+      width: 90%;
+    }
+  .flex-container video{
+      width: 90%;
+    }      
+  }
+
+  @media screen and (max-width: 600px){
+    .flex-container div{
+      width: 100%;
+      height: 100%;
+      margin: 5px;
+    }
+  .flex-container img{
+      width: 400px;
+    }
+  .flex-container video{
+      width: 400px;
+    }  
+  }
+  @media screen and (min-width: 600px) and (max-width: 1024px){
+    .flex-container div{
+      width: 45%;
+      height: 100%;
+      margin: 5px;
+    }
+  .flex-container img{
+      width: 90%;
+    }
+  .flex-container video{
+      width: 90%;
+    }  
+  }  
