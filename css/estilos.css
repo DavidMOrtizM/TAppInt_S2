@@ -1,11 +1,15 @@
+/*Se importa la fuente "Oswald" desde Google Fonts para usar en toda la página.*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 
+/*Se aplica a todos los elementos de la página y establece que la fuente utilizada será "Oswald" y la tipografía se establece como "sans-serif".*/
 * {
   font-family: "Oswald", sans-serif;
 }
+/* Establece el color de fondo de la página web como un tono gris claro.*/
 body {
   background-color: #f5f5f5;
 }
+/*Define un contenedor que utiliza el modelo de diseño flexible (flexbox) para distribuir los elementos de manera uniforme.*/
 .flex-container {
 	display: flex;
 	flex-direction: row;
@@ -13,14 +17,6 @@ body {
 	align-items: baseline;
 	align-content: stretch;
   justify-content: space-between;
-}
-.flex-container div {
-  width: 45%;
-  height: 100%;
-  margin: 5px;
-}
-.flex-container img {
-  width: 600px;
 }
 
 /**Aplicando color de fondo color de las letras en los bloques para que cambien al poner el cursor sobre ellos **/
@@ -39,6 +35,9 @@ a:hover {
   text-decoration: none;
 }
 
+/*Define un conjunto de reglas que se aplicarán cuando el ancho de la pantalla sea de al menos 1024 píxeles.
+ En este caso, los elementos div dentro de .flex-container tendrán un ancho del 32% para tener 3 columnas, una altura del 100% y un margen de 5 píxeles entre ellos. 
+ Las imágenes y los videos dentro del contenedor tendrán un ancho del 90%.*/
 @media screen and (min-width: 1024px){
   .flex-container div{
     width: 32%;
@@ -53,6 +52,9 @@ a:hover {
   }      
 }
 
+/*@media screen and (max-width: 740px): Define un conjunto de reglas que se aplicarán cuando el ancho de la pantalla sea de un máximo de 740 píxeles. 
+En este caso, los elementos div dentro de .flex-container tendrán un ancho del 100% para tener 1 columna, una altura del 100% y un margen de 3 píxeles entre ellos. 
+Las imágenes y los videos dentro del contenedor tendrán un ancho de 400 píxeles.*/
 @media screen and (max-width: 740px){
   .flex-container div{
     width: 100%;
@@ -66,7 +68,9 @@ a:hover {
     width: 400px;
   }  
 }
-
+/*@media screen and (min-width: 740px) and (max-width: 1024px): Define un conjunto de reglas que se aplicarán cuando el ancho de la pantalla esté entre 740 y 1024 píxeles. 
+En este caso, los elementos div dentro de .flex-container tendrán un ancho del 45% para tener 2 colimnas, una altura del 100% y un margen de 5 píxeles entre ellos. 
+Las imágenes y los videos dentro del contenedor tendrán un ancho del 90%.*/
 @media screen and (min-width: 740px) and (max-width: 1024px){
   .flex-container div{
     width: 45%;
