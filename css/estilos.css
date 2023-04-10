@@ -14,6 +14,21 @@
 	align-content: stretch;
   justify-content: space-between;
   }
+
+/**Aplicando color de fondo color de las letras en los bloques para que cambien al poner el cursor sobre ellos **/
+.flex-container div:hover {
+  background-color: black;
+  color: #f9f9f9;
+}
+/** Cambian   */
+footer {
+  background-color: #c9d2d0;
+  color: #31231e;
+}
+
+
+
+
   @media screen and (min-width: 1024px){
     .flex-container div{
       width: 32%;
