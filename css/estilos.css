@@ -6,7 +6,7 @@
   font-family: "Oswald", sans-serif;
 }
 /* Establece el color de fondo de la página web como un tono gris claro.*/
-body {
+body {  
   background-color: #f5f5f5;
 }
 /*Define un contenedor que utiliza el modelo de diseño flexible (flexbox) para distribuir los elementos de manera uniforme.*/
@@ -71,7 +71,8 @@ Las imágenes y los videos dentro del contenedor tendrán un ancho de 400 píxel
 /*@media screen and (min-width: 740px) and (max-width: 1024px): Define un conjunto de reglas que se aplicarán cuando el ancho de la pantalla esté entre 740 y 1024 píxeles. 
 En este caso, los elementos div dentro de .flex-container tendrán un ancho del 45% para tener 2 colimnas, una altura del 100% y un margen de 5 píxeles entre ellos. 
 Las imágenes y los videos dentro del contenedor tendrán un ancho del 90%.*/
-@media screen and (min-width: 740px) and (max-width: 1024px){
+@media screen and (min-width: 740px) 
+and (max-width: 1024px){
   .flex-container div{
     width: 45%;
     height: 100%;
