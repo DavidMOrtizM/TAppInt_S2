@@ -85,3 +85,6 @@ and (max-width: 1024px){
     width: 90%;
   }  
 }  
+.relog{
+  text-align: right;
+}

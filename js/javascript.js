@@ -1,10 +1,17 @@
-function updateTime() {
-    const date = new Date();
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-    const seconds = date.getSeconds().toString().padStart(2, '0');
-    const time = `${hours}:${minutes}:${seconds}`;
-    const clock = document.getElementById('relog');
-    clock.textContent = time;
+function ActualizaTiempo() {
+    const fecha = new Date();
+    const options = { 
+       year: 'numeric', 
+       month: 'long', 
+       day: 'numeric', 
+       hour: 'numeric', 
+       minute: 'numeric', 
+       second: 'numeric',
+       hour12: false 
+    };
+    const formatofecha = fecha.toLocaleDateString('es-ES', options);
+    const relog = document.getElementById('relog');
+    relog.textContent = formatofecha ;
   }
-  setInterval(updateTime, 1000);
+  setInterval(ActualizaTiempo, 1000);
+
