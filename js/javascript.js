@@ -96,7 +96,7 @@ function ActualizaTiempo() {
 
   setInterval(ActualizaTiempo, 1000);
 
-function Noticia(Categoria){
+function Listar_Noticias(Categoria){
     let NoticiasObj = document.getElementById('noticias');
     List_Noticias.forEach((elemento)=>{
         if(elemento.categoria==Categoria){
