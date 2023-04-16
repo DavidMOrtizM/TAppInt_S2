@@ -24,6 +24,15 @@ body {
   background-color: black;
   color: #f9f9f9;
 }
+.flex-container div{
+  text-align: center;
+}
+.flex-container p,h1, h2, h3, h4, h5, h6 {
+  text-align: justify;
+  padding: 15px;
+}
+
+
 /** Cambia el color de fondo del footer */
 footer {
   background-color: #c9d2d0;
@@ -38,7 +47,7 @@ a:hover {
 /*Define un conjunto de reglas que se aplicarán cuando el ancho de la pantalla sea de al menos 1024 píxeles.
  En este caso, los elementos div dentro de .flex-container tendrán un ancho del 32% para tener 3 columnas, una altura del 100% y un margen de 5 píxeles entre ellos. 
  Las imágenes y los videos dentro del contenedor tendrán un ancho del 90%.*/
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1200px){
   .flex-container div{
     width: 32%;
     height: 100%;
@@ -55,7 +64,7 @@ a:hover {
 /*@media screen and (max-width: 740px): Define un conjunto de reglas que se aplicarán cuando el ancho de la pantalla sea de un máximo de 740 píxeles. 
 En este caso, los elementos div dentro de .flex-container tendrán un ancho del 100% para tener 1 columna, una altura del 100% y un margen de 3 píxeles entre ellos. 
 Las imágenes y los videos dentro del contenedor tendrán un ancho de 400 píxeles.*/
-@media screen and (max-width: 740px){
+@media screen and (max-width: 800px){
   .flex-container div{
     width: 100%;
     height: 100%;
@@ -71,8 +80,7 @@ Las imágenes y los videos dentro del contenedor tendrán un ancho de 400 píxel
 /*@media screen and (min-width: 740px) and (max-width: 1024px): Define un conjunto de reglas que se aplicarán cuando el ancho de la pantalla esté entre 740 y 1024 píxeles. 
 En este caso, los elementos div dentro de .flex-container tendrán un ancho del 45% para tener 2 colimnas, una altura del 100% y un margen de 5 píxeles entre ellos. 
 Las imágenes y los videos dentro del contenedor tendrán un ancho del 90%.*/
-@media screen and (min-width: 740px) 
-and (max-width: 1024px){
+@media screen and (min-width: 800px) and (max-width: 1200px){
   .flex-container div{
     width: 45%;
     height: 100%;
