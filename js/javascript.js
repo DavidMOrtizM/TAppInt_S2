@@ -1,4 +1,4 @@
-var Noticias = [
+var List_Noticias = [
 {
     "titulo": "Cierran todo el borde costero de San Pedro de la Paz por sospecha de gripe aviar: hay aves muertas",
     "categoria":"Nacional",
@@ -97,38 +97,38 @@ function ActualizaTiempo() {
   setInterval(ActualizaTiempo, 1000);
 
 function Noticia(Categoria){
-    let noticias = document.getElementById('noticias');
-    Noticias.forEach((elemento)=>{
+    let NoticiasObj = document.getElementById('noticias');
+    List_Noticias.forEach((elemento)=>{
         if(elemento.categoria==Categoria){
-            let articulos = document.createElement("div");
-            let titulo = document.createElement("h2");
-            let categoria = document.createElement("h4");
-            articulos.appendChild(titulo);
-            articulos.appendChild(categoria);
+            let ArticulosObj = document.createElement("div");
+            let TituloObj = document.createElement("h2");
+            let CategoriaObj = document.createElement("h4");
+            ArticulosObj.appendChild(TituloObj);
+            ArticulosObj.appendChild(CategoriaObj);
             if(elemento.foto!=""){
-                let foto = document.createElement("img");
-                foto.src=elemento.foto;
-                articulos.appendChild(foto);
+                let FotoObj = document.createElement("img");
+                FotoObj.src=elemento.foto;
+                ArticulosObj.appendChild(FotoObj);
             }
             if(elemento.video!=""){
-                var videos = document.createElement("video");
-                videos.setAttribute("src", elemento.video);
-                videos.setAttribute("controls", "");
-                videos.setAttribute("type", "video/mp4");
-                articulos.appendChild(videos);
+                var VideoObj = document.createElement("video");
+                VideoObj.setAttribute("src", elemento.video);
+                VideoObj.setAttribute("controls", "");
+                VideoObj.setAttribute("type", "video/mp4");
+                ArticulosObj.appendChild(VideoObj);
             }        
-            let texto = document.createElement("p");
-            titulo.innerHTML=elemento.titulo;
-            categoria.innerHTML=elemento.categoria;
-            texto.innerHTML=elemento.texto;
-            articulos.appendChild(texto);
+            let TextoObj = document.createElement("p");
+            TituloObj.innerHTML=elemento.titulo;
+            CategoriaObj.innerHTML=elemento.categoria;
+            TextoObj.innerHTML=elemento.texto;
+            ArticulosObj.appendChild(TextoObj);
             if(elemento.audio!=""){
-                var audio = document.createElement("audio");
-                audio.setAttribute("src", elemento.audio);
-                audio.setAttribute("controls", "");
-                articulos.appendChild(audio);
+                var AudioObj = document.createElement("audio");
+                AudioObj.setAttribute("src", elemento.audio);
+                AudioObj.setAttribute("controls", "");
+                ArticulosObj.appendChild(AudioObj);
             }  
-            noticias.appendChild(articulos);
+            NoticiasObj.appendChild(ArticulosObj);
         }
     });
    
