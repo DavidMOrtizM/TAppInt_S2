@@ -141,7 +141,7 @@ function Agregar_Form(){
 
     let Lable_TxtObj = document.createElement("Label");
     Lable_TxtObj.innerHTML = "Parrafo:";
-    let Txt_TxToObj = document.createElement("input");
+    let Txt_TxToObj = document.createElement("textarea");
     Txt_TxToObj.setAttribute("class", "parrafo");
     Txt_TxToObj.setAttribute("type", "text");
     Txt_TxToObj.setAttribute("id", "Txt_Texto");
