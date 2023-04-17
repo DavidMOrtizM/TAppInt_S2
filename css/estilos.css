@@ -7,7 +7,7 @@
 }
 html {  font-size: 16px; /* Tamaño de fuente base */}
 
-p, a {  font-size: 1.25em; /* 16px */}
+p, a, label, input,textarea {  font-size: 1.25em; /* 16px */}
 
 h1 {  font-size: 2.5rem; /* 40px */}
 
@@ -69,9 +69,10 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: baseline;
+	align-items:baseline;
+  justify-content:left;
 	align-content: stretch;
-  justify-content: space-between;
+  
 }
 
 /**Aplicando color de fondo color de las letras en los bloques para que cambien al poner el cursor sobre ellos **/
@@ -163,7 +164,7 @@ label {
   width: 90%;
 }
 
-input {
+input, textarea {
   padding: 8px;
   border-radius: 5px;
   border: 1px solid #ccc;
