@@ -21,6 +21,43 @@ h5 {  font-size: 1rem; /* 16px */}
 
 h6 {  font-size: 0.875rem; /* 14px */}
 
+/* Estilos para el contenedor del logo, el nombre del sitio y la fecha/hora */
+header {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.cabecera{
+  display: flex;
+  align-items:center;
+  justify-content:left;
+}
+/* Estilos para el logo */
+header img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el nombre del sitio */
+header h1 {
+  font-size: 3em;
+  color: #333;
+  margin-left: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la fecha y hora */
+.relog{
+  text-align: left;
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
 
 
 /* Establece el color de fondo de la página web como un tono gris claro.*/
@@ -111,9 +148,7 @@ Las imágenes y los videos dentro del contenedor tendrán un ancho del 90%.*/
     width: 90%;
   }  
 }  
-.relog{
-  text-align: right;
-}
+
 form {
 /*  display: flex;*/
 /*  flex-direction: column;*/
