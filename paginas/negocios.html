@@ -12,7 +12,7 @@
     <!-- Enlace a archivo CSS para utilizar iconos de la librería Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body onload="Listar_Noticias('Negocios')">
+  <body onload="Listar_Noticias('Negocios'),Agregar_Form()"">
     <header>
       <!-- Sección de encabezado de la página, donde se muestra el logo y el nombre del periódico -->
       <div>
@@ -31,6 +31,7 @@
     <section> 
       <!-- Sección de contenido principal de la página, donde se muestran diferentes noticias -->
       <article class="flex-container" id="noticias" ></article> 
+      <article class="flex-container" id="form_agregar"></article>
    </section>
     <footer >
       <!-- Pie de página -->
