@@ -5,6 +5,40 @@
 * {
   font-family: "Oswald", sans-serif;
 }
+html {
+  font-size: 16px; /* Tamaño de fuente base */
+}
+
+p, a {
+  font-size: 1.25em; /* 16px */
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+  font-size: 2rem; /* 32px */
+}
+
+h3 {
+  font-size: 1.75rem; /* 24px */
+}
+
+h4 {
+  font-size: 1.5rem; /* 20px */
+}
+
+h5 {
+  font-size: 1rem; /* 16px */
+}
+
+h6 {
+  font-size: 0.875rem; /* 14px */
+}
+
+
+
 /* Establece el color de fondo de la página web como un tono gris claro.*/
 body {  
   background-color: #f5f5f5;
