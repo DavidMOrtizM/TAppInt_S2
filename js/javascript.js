@@ -133,7 +133,7 @@ function Agregar_Form(){
     let Form_Obj = document.getElementById('form_agregar');
     let ArticulosObj = document.createElement("div"); 
     let TituloObj = document.createElement("h2");
-    TituloObj.innerHTML="Agregue una nueva Noticia ingresando el Titulo y el Parrafo. Luego haga click en el botón"
+    TituloObj.innerHTML="Para ingresar una nueva noticia en la seccion " + Categorias + ". Agregue el Titulo y el Parrafo de la noticia. Luego haga click en el botón para subirla"
     ArticulosObj.appendChild(TituloObj);
     let FormObj = document.createElement('form');
     let Lable_TituloObj = document.createElement("Label");
