@@ -92,6 +92,7 @@ function Listar_Noticias(Categoria){
     LocalStorage_Noticas.forEach((elemento)=>{
         if(elemento.categoria==Categorias){
             let ArticulosObj = document.createElement("div");
+            ArticulosObj.setAttribute("class", "art");
             let TituloObj = document.createElement("h2");
             let CategoriaObj = document.createElement("h4");
             ArticulosObj.appendChild(TituloObj);
@@ -141,6 +142,7 @@ function Agregar_Form(){
     let Lable_TxtObj = document.createElement("Label");
     Lable_TxtObj.innerHTML = "Parrafo:";
     let Txt_TxToObj = document.createElement("input");
+    Txt_TxToObj.setAttribute("class", "parrafo");
     Txt_TxToObj.setAttribute("type", "text");
     Txt_TxToObj.setAttribute("id", "Txt_Texto");
 

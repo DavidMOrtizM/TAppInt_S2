@@ -5,37 +5,21 @@
 * {
   font-family: "Oswald", sans-serif;
 }
-html {
-  font-size: 16px; /* Tamaño de fuente base */
-}
+html {  font-size: 16px; /* Tamaño de fuente base */}
 
-p, a {
-  font-size: 1.25em; /* 16px */
-}
+p, a {  font-size: 1.25em; /* 16px */}
 
-h1 {
-  font-size: 2.5rem; /* 40px */
-}
+h1 {  font-size: 2.5rem; /* 40px */}
 
-h2 {
-  font-size: 2rem; /* 32px */
-}
+h2 {  font-size: 2rem; /* 32px */}
 
-h3 {
-  font-size: 1.75rem; /* 24px */
-}
+h3 {  font-size: 1.75rem; /* 24px */}
 
-h4 {
-  font-size: 1.5rem; /* 20px */
-}
+h4 {  font-size: 1.5rem; /* 20px */}
 
-h5 {
-  font-size: 1rem; /* 16px */
-}
+h5 {  font-size: 1rem; /* 16px */}
 
-h6 {
-  font-size: 0.875rem; /* 14px */
-}
+h6 {  font-size: 0.875rem; /* 14px */}
 
 
 
@@ -54,7 +38,7 @@ body {
 }
 
 /**Aplicando color de fondo color de las letras en los bloques para que cambien al poner el cursor sobre ellos **/
-.flex-container div:hover {
+.art:hover {
   background-color: black;
   color: #f9f9f9;
 }
@@ -164,4 +148,7 @@ button {
 
 button:hover {
   background-color: #50b954;
+}
+.parrafo{
+  height: 300px;
 }
