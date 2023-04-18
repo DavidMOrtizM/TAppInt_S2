@@ -173,7 +173,7 @@ input, textarea {
 
 }
 
-button {
+button, .btn {
   background-color: #18751b;
   color: white;
   padding: 10px 20px;
