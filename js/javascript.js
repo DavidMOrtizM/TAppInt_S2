@@ -58,7 +58,7 @@ if (window.localStorage.length === 0) {
         "video":"",
     },
     {
-        "titulo": "Banco de Chile presenta nueva versión de La Feria Huertera, una vitrina para el emprendimiento sustentable<",
+        "titulo": "Banco de Chile presenta nueva versión de La Feria Huertera, una vitrina para el emprendimiento sustentable",
         "categoria":"Negocios",
         "foto":"../resources/images/feria-huertera-negocios.jpg",
         "texto":"Se espera la asistencia de más de 10 mil personas, quienes podrán participar de distintas actividades como charlas, talleres, conversatorios, yoga, cocina y gastronomía en vivo, y diversos panoramas para los niños. La entidad financiera desarrolló una serie de beneficios para que los emprendedores puedan impulsar sus negocios. El evento contará también con emprendedores que forman parte del Programa Pymes para Chile, de Banco de Chile, quienes podrán dar a conocer sus proyectos sustentables. Con el fin de apoyar e impulsar aquellos emprendimientos con impacto social y ambiental que están dejando huella en sus comunidades, Banco de Chile presenta La Feria Huertera, evento que busca reunir en un solo lugar a pequeños productores agroecológicos y emprendedores que están trabajando por mejorar y aportar al planeta.",
