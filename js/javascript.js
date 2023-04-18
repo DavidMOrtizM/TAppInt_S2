@@ -85,12 +85,14 @@ if (window.localStorage.length === 0) {
 
 
 function Listar_Noticias(Categoria){
+    let contador=0;
     var LocalStorage_Noticas = JSON.parse(localStorage.getItem('Noticias'));
     Categorias=Categoria;
     let NoticiasObj = document.getElementById('noticias');
     while (NoticiasObj.firstChild) {NoticiasObj.removeChild(NoticiasObj.firstChild)};
     LocalStorage_Noticas.forEach((elemento)=>{
         if(elemento.categoria==Categorias){
+            contador++;
             let ArticulosObj = document.createElement("div");
             ArticulosObj.setAttribute("class", "art");
             let TituloObj = document.createElement("h2");
@@ -123,9 +125,10 @@ function Listar_Noticias(Categoria){
             NoticiasObj.appendChild(ArticulosObj);
         }
     });
-  
-
-
+    let ContadorObj = document.getElementById('contar');
+    let ContadorTxtaObj = document.createElement("h4");
+    ContadorTxtaObj.innerHTML="Actualmente hay " + contador +" noticias";
+    ContadorObj.appendChild(ContadorTxtaObj); 
 }
 
 function Agregar_Form(){
