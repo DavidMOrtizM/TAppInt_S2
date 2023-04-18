@@ -187,4 +187,5 @@ button:hover {
 }
 .parrafo{
   height: 300px;
+  resize: none;
 }
